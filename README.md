@@ -1,1 +1,0 @@
-# earthpalette.space.github.io
