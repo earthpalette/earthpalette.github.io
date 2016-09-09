@@ -48,6 +48,8 @@ body{
 
 body{
   background-color: #323e3e;
+
+
 }
 
 
@@ -59,6 +61,25 @@ body{
   color: white;
   z-index: 10000;
 
+
+}
+.homeLogo{
+  -webkit-animation: fadeIn 5s ; /* Safari 4+ */
+  -moz-animation:    fadeIn 5s ; /* Fx 5+ */
+  -o-animation:      fadeIn 5s ; /* Opera 12+ */
+  animation:         fadeIn 5s ; /* IE 10+, Fx 29+ */
+
+  @keyframes fadeIn {
+    0%{
+      opacity:0;
+    }
+    60%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
 }
 .menu{
   height: 30px;
@@ -68,6 +89,24 @@ body{
   right:20px;
   //border: 1px solid white;
   z-index: 10000;
+
+  -webkit-animation: fadeIn 5s ; /* Safari 4+ */
+  -moz-animation:    fadeIn 5s ; /* Fx 5+ */
+  -o-animation:      fadeIn 5s ; /* Opera 12+ */
+  animation:         fadeIn 5s ; /* IE 10+, Fx 29+ */
+
+  @keyframes fadeIn {
+    0%{
+      opacity:0;
+    }
+    60%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+
   &:hover{
     cursor: pointer;
   }
@@ -134,7 +173,47 @@ body{
   width: 100%;
   background-color:#1E1E21;
   position: fixed ;
-  z-index: 9999
+  z-index: 9999;
+
+  .contact{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;margin:auto;
+    height: 20px;
+    width: 100px;
+    //border: 1px solid white;
+    font-family: $incon;
+    color: #f8e084;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .feedback{
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;margin:auto;
+    height: 20px;
+    width: 150px;
+    //border: 1px solid white;
+    font-family: $incon;
+    color: #f8e084;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 50px;
+    &:before{
+      content:'';
+      height: 2px;
+      width: 10px;
+      background-color: white;
+      position: absolute;
+      top:40px;
+      left:0;
+      right:0;
+      margin: auto;
+
+    }
+  }
+
+
 }//end menuContent
 
 .banner{
@@ -148,118 +227,6 @@ body{
   background-color: #323e3e;
   position: relative;
 
-
-/*
-  .planetShell{
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin: auto;
-    height: 310px;
-    width: 310px;
-    //border: 1px solid black;
-    .o1{
-      height: 310px;
-      width: 310px;
-      background-color: rgba(0,0,0,0.1);
-
-    }
-
-    .o2{
-      height: 290px;
-      width: 290px;
-      background-color: rgba(0,0,0,0.2);
-    }
-
-    .o3{
-      height: 260px;
-      width: 260px;
-      background-color: rgba(0,0,0,0.3);
-
-    }
-
-    .planetEarth{
-      background-color: #2699be;
-      height: 220px;
-      width: 220px;
-      border: 5px solid #FDD699;
-
-    }
-    .core{
-      height: 30px;
-      width: 30px;
-      background-color:#FDAF99;
-
-
-
-    }
-    .moon{
-      position: absolute;
-      top:0px;
-      left:0px;
-      //top:0;
-      //left:0;
-      //right:0;
-      //bottom:0;
-      //margin: auto;
-
-      height: 60px;
-      width: 60px;
-      border-radius: 100%;
-      background-color:#ccfefa;
-    }
-
-    .core,
-    .planetEarth,
-    .o1,
-    .o2,
-    .o3{
-      position: absolute;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      margin: auto;
-      border-radius: 100%;
-      padding:0;
-
-    }
-  }//end planetShell
-*/
-
-  .planetShell{
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    margin: auto;
-    height: 300px;
-    width: 300px;
-    //border: 1px solid black;
-    overflow: visible;
-
-    .core,
-    .planet{
-      z-index:10;
-    }
-    .o3{
-      z-index:9;
-    }
-    .core,
-    .planet,
-    .moon,
-    .o1,
-    .o2,
-    .o3{
-      -webkit-box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.75);
-box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.75);
-    }
-
-  }//end planetShell
 
   .title{
     font-family: $incon;
@@ -288,64 +255,149 @@ box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.75);
       bottom:-50px !important;
       left:0;
       font-size: 17px;
+      z-index: 12;
+
 
 
       //border: 1px solid white;
       width: 100%;
+
+      -webkit-animation: fadeIn 5s ; /* Safari 4+ */
+      -moz-animation:    fadeIn 5s ; /* Fx 5+ */
+      -o-animation:      fadeIn 5s ; /* Opera 12+ */
+      animation:         fadeIn 5s ; /* IE 10+, Fx 29+ */
+
+      @keyframes fadeIn {
+        0%{
+          opacity:0;
+        }
+        60%{
+          opacity:0;
+        }
+        100%{
+          opacity:1;
+        }
+      }
     }
 
-  }//end animation root
-
-
-
-  .solarRoot{
-    //border: 1px solid white;
-    position: absolute;
-    top:0;left:0;right:0;bottom:0;margin:auto;
-    height:400px;
-    width: 400px;
-    z-index: 1000;
-
-    svg{
+    .planetShell{
       position: absolute;
       top:0;
       left:0;
       right:0;
       bottom:0;
       margin: auto;
-      height: 400px;
-      width: 400px;
+      height: 300px;
+      width: 300px;
       //border: 1px solid black;
       overflow: visible;
 
-      .jupiter{
-        border: 2px solid tomato !important;
+      .core,
+      .planet{
+        z-index:10;
+      }
+      .o3{
+        z-index:9;
+      }
+      .moonHold{
+        z-index: 11;
+      }
+
+      .core,
+      .planet,
+      .moon,
+      .o1,
+      .o2,
+      .o3{
+        -webkit-box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.4);
+        box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.4);
+      }
+
+    .planetItem{
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin: auto;
+      border-radius: 100%;
+    }
+    .o1{
+      height: 286px;
+      width: 286px;
+
+      background-color: rgba(182, 228, 255,0.1);
+    }
+    .o2{
+      height: 270px;
+      width: 270px;
+      background-color:rgba(182, 228, 255,0.2);
+    }
+    .o3{
+      height: 250px;
+      width: 250px;
+      background-color:rgba(182, 228, 255,0.3);
+    }
+    .planet{
+      height: 220px;
+      width: 220px;
+      background-color: #0088BE;
+      border: 5px solid #FDD699;
+    }
+    .core{
+      height: 40px;
+      width: 40px;
+      background-color:#E69E9E;
+    }
+    .moonHold{
+      //border: 1px solid white;
+      height: 60px;
+      width: 150px;
+      position: absolute;
+      top:0;
+      left:0;
+      bottom:0;
+      margin: auto;
+
+      .moon{
+        position: absolute;
+        top:0;
+        left:-80px !important;
+        height: 60px;
+        width: 60px;
+        background-color: #ccfefa;
+        border-radius: 100%;
       }
     }
-  }//end solarRoot
+
+    }//end planetShell
+
+  }//end animation root
 
 
 
 
-  @keyframes move-twink-back {
+  @keyframes move-stars-back {
       from {background-position:0 0;}
       to {background-position:-10000px 5000px;}
   }
-  @-webkit-keyframes move-twink-back {
+  @-webkit-keyframes move-stars-back {
       from {background-position:0 0;}
       to {background-position:-10000px 5000px;}
   }
-  @-moz-keyframes move-twink-back {
+  @-moz-keyframes move-stars-back {
       from {background-position:0 0;}
       to {background-position:-10000px 5000px;}
   }
-  @-ms-keyframes move-twink-back {
+  @-ms-keyframes move-stars-back {
       from {background-position:0 0;}
       to {background-position:-10000px 5000px;}
   }
 
 
-  .stars, .twinkling{
+  .stars,
+  .twinkling{
     position:absolute;
     top:0;
     left:0;
@@ -359,17 +411,18 @@ box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.75);
   .stars {
     background:#323e3e url("../img/stars.png") repeat top center;
     z-index:0;
+
   }
 
   .twinkling{
     background:transparent url("../img/twinkle.png") repeat top center;
     z-index:1;
 
-    -moz-animation:move-twink-back 200s linear infinite;
-    -ms-animation:move-twink-back 200s linear infinite;
-    -o-animation:move-twink-back 200s linear infinite;
-    -webkit-animation:move-twink-back 200s linear infinite;
-    animation:move-twink-back 200s linear infinite;
+    -moz-animation:move-stars-back 200s linear infinite;
+    -ms-animation:move-stars-back 200s linear infinite;
+    -webkit-animation:move-stars-back 200s linear infinite;
+    animation:move-stars-back 200s linear infinite;
+
   }
 
 
@@ -451,11 +504,13 @@ box-shadow: 0px 7px 83px -16px rgba(0,0,0,0.75);
       display: inline-block;
       vertical-align: middle;
       //background-color: white !important;
+
       &:nth-child(2){
         margin: 0 25px;
       }
       svg{
         fill: white;
+        transform: scale(0.8)
       }
     }
   }//end social
@@ -645,7 +700,7 @@ footer{
   background-color: #7DB4B5;
   position: relative;
 
-  p{
+  .byMe{
     position: absolute;
     top:0;left:0;right:0;bottom:0;margin: auto;
     //border: 1px solid white;
@@ -657,7 +712,28 @@ footer{
       color: inherit;
       border-bottom: 1px solid black;
     }
-  }
+  }//ennd byMe
+  .copyright{
+    position: absolute;
+    text-align: center;
+    bottom:20px;
+    left:0;
+    right:0;
+    margin:auto;
+    width: 100px;
+
+    font-family: $incon;
+    color: black;
+    //letter-spacing: 3px;
+
+    span{
+      font-size: 19px;
+      //display: inline-block;
+      //vertical-align: middle;
+      //padding-bottom: 10px;
+
+    }
+  }//end copyright
 }//end footer
 
 

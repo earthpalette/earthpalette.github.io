@@ -1,0 +1,85 @@
+.formPage{
+  height: 100%;
+  width: 100%;
+  background-color: #365361;
+  min-height: 500px;
+  overflow: hidden;
+
+  .title{
+    font-family: $incon;
+    color: #fff085;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    position: fixed;
+    bottom:20px;right:20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+
+  form{
+    text-align: center;
+    width: 350px;
+    font-family: $incon;
+    position: absolute;
+    top:0;left:0;right:0;bottom:0;margin:auto;
+    height: 360px;
+
+
+    input,
+    #message,
+    button{
+      &:focus{
+        outline:0;
+      }
+    }
+
+
+    input,
+    #message{
+      display: block;
+      margin: 10px auto 0 auto;
+      width: 100%;
+      background-color: transparent;
+      padding: 10px 0 10px 0;
+      border: 2px solid #162228;
+      border-radius: 0;
+      text-align: center;
+
+    }
+    #message{
+      height: 175px;
+    }
+
+    button{
+      padding: 15px 25px;
+      margin-top: 30px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      letter-spacing: 3px;
+      border: 2px solid #162228;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+
+    ::-webkit-input-placeholder {
+      color: white;
+      opacity:1;
+    }
+    :-moz-placeholder {
+      color: white;
+      opacity:1;
+    }
+    ::-moz-placeholder {
+      color: white;
+      opacity:1;
+    }
+    :-ms-input-placeholder {
+      color: white;
+      opacity:1;
+    }
+
+  }//end form
+}//end formPage

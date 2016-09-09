@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Contact</title>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <link type="text/css" rel="stylesheet" href="css/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  </head>
+  <body>
+    <a class="logo" href="index.html">EarthPalette.Space</a>
+    <section class="formPage fullSize">
+      <h1 class="title">contact</h1>
+      <form action="http://formspree.io/earthpalette.space@aol.com" method="POST" class="cntr">
+          <input name="contactPageName" type="text" id="name" placeholder="Name"/>
+          <input name="email" type="email" id="email" placeholder="Email"/>
+        <!-- temporary comment,  (This is a honeypot to catch webscrapers) -->
+  			<input type="hidden" name="_next" value="responce.html" />
+        <input type="text" name="_gotcha" style="display:none;" />
+          <label for="message"></label>
+          <textarea class="cntr" id="message" name="message" placeholder="Message" Required></textarea>
+          <button class="cntr" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+  <!--
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/blazy.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  -->
+  <!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/jquery.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/ColorPropsPlugin.min.js"></script>
+  -->
+  <script type="text/javascript" src="js/earthPalette.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-64303663-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</html>
