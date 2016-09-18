@@ -143,7 +143,8 @@ body {
   width: 100%;
   background-color: #1E1E21;
   position: fixed;
-  z-index: 9999; }
+  z-index: 9999;
+  opacity: 0; }
   .menuContent .contact {
     position: absolute;
     top: 0;
